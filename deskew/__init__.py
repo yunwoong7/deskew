@@ -5,7 +5,7 @@ from .fast_fourier_transform import get_angle_fft
 from .bounding_box import get_angle_bbox
 
 
-def rotate_img(img, angle, resize=True, border_mode=cv2.BORDER_REPLICATE, border_value=None):
+def rotate(img, angle, resize=True, border_mode=cv2.BORDER_REPLICATE, border_value=None):
     '''
     :param img: (numpy)
     :param angle: (float)
