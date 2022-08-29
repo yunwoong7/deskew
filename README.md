@@ -1,4 +1,4 @@
-# Image deskew
+# Document image deskew
 텍스트가 포함된 이미지에서 정확히 알 수 없는 각도로 회전된 이미지를 기울기 각도를 계산하여 기울어진 부분을 회전하기 위함
 
 <img src="asset/rotate.jpg" width=600px />
