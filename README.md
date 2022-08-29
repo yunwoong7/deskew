@@ -3,6 +3,16 @@
 
 <img src="asset/rotate.jpg" width=600px />
 
+기울기 보정을 위해서 현재는 3가지의 방법으로 기능을 제공합니다.
+```python
+from deskew import available_tasks
+available_tasks()
+```
+
+```python
+"Available tasks are ['bbox', 'fft', 'ht']"
+```
+
 # usage
 
 ### get_angle_bbox:

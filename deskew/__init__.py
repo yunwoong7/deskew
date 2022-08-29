@@ -5,6 +5,13 @@ from .fast_fourier_transform import get_angle_fft
 from .bounding_box import get_angle_bbox
 
 
+SUPPORTED_TASKS = {
+    "bbox": get_angle_bbox,
+    "fft": get_angle_fft,
+    "ht": get_angle_hough_transform,
+}
+
+
 def rotate(img, angle, resize=True, border_mode=cv2.BORDER_REPLICATE, border_value=None):
     '''
     :param img: (numpy)
@@ -26,3 +33,14 @@ def rotate(img, angle, resize=True, border_mode=cv2.BORDER_REPLICATE, border_val
         output_image = cv2.resize(output_image, (w, h))
 
     return output_image
+
+
+def available_tasks():
+    """
+    Returns available tasks in Pororo project
+
+    Returns:
+        str: Supported task names
+
+    """
+    return "Available tasks are {}".format(list(SUPPORTED_TASKS.keys()))
